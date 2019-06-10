@@ -58,7 +58,7 @@ ssh-keygen -t rsa -C "tangjianhao@139.com"
 
 2.已有的本地仓库与之关联，
 先输入 git remote rm origin
-git remote add origin git@github.com:jackytjh/learngit.git
+git remote add origin git@github.com:jackytjh/lg4.git
 
 3.首次把本地仓库的内容推送到GitHub仓库。
 git push -u origin master
@@ -72,6 +72,8 @@ git clone git@github.com:jackytjh/lg2.git
 git push origin master
 111
 222
+
+333
 
 
 
