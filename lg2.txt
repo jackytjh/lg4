@@ -57,38 +57,43 @@ git rm test.txt
 ssh-keygen -t rsa -C "tangjianhao@139.com"
 
 2.已有的本地仓库与之关联，
-先输入 git remote rm origin
+>>>>先输入 git remote rm origin
 git remote add origin git@github.com:jackytjh/lg4.git
 
 3.首次把本地仓库的内容推送到GitHub仓库。
 git push -u origin master
 
 
-4.克隆一个本地库
+4.首次克隆一个本地库
 git clone git@github.com:jackytjh/lg2.git
+》》》》》然后$ cd gitskills
+$ ls
+README.md
 
 
 4.只要本地作了提交，就可以通过命令,把本地master分支的最新修改推送至GitHub
 git push origin master
-111
-222
-
-333
 
 
+5.
+git push
+git pull
 
 
+============
+分支部分，master，dev
+===========
 
-echo "# lg3" >> README.md
-git init
-git add lg2.txt
-git commit -m "first commit"
-git remote add origin https://github.com/jackytjh/lg3.git
-git push -u origin master
+1.创建dev分支，然后切换到dev分支
+$ git checkout -b dev
 
+相当于：
+$ git branch dev
+$ git checkout dev
 
-git remote add origin https://github.com/jackytjh/lg3.git
-git push -u origin master
+2.查看当前分支
+git branch
+
 
 
 
