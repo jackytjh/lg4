@@ -1,0 +1,96 @@
+1.安装
+git config --global user.name "jackytjh"
+git config --global user.email "tangjianhao@139.com"
+
+2.创建目录
+mkdir learngit
+cd learngit
+pwd
+
+3.初始化
+git init
+
+4.显示隐藏目录
+ls -ah
+
+5.添加到暂存区
+git add readme.txt
+
+6.暂存区添加到仓库
+git commit -m "wrote a readme file"
+
+7.状态
+git status
+
+8.对比
+git diff readme.txt
+
+9.仓库更改日志
+git log
+git log --pretty=oneline
+git reflog
+
+10.查看工作区文档
+cat readme.txt
+:q
+
+11.工作区对比仓库：
+git diff HEAD -- readme.txt 
+
+12.工作区版本回退（按仓库）
+git reset --hard HEAD^^
+git reset --hard 1094a
+
+13.丢弃暂存区更改撤销？（改乱了工作区某个文件的内容，还添加到了暂存区，13+14）
+git reset HEAD readme.txt
+
+14.丢弃工作区更改（按暂存区/仓库）
+git checkout -- readme.txt
+
+15.删除仓库文件
+git rm test.txt
+
+=================================
+远程部分
+==============================
+1.创建ssh
+ssh-keygen -t rsa -C "tangjianhao@139.com"
+
+2.已有的本地仓库与之关联，
+先输入 git remote rm origin
+git remote add origin git@github.com:jackytjh/learngit.git
+
+3.首次把本地仓库的内容推送到GitHub仓库。
+git push -u origin master
+
+
+4.克隆一个本地库
+git clone git@github.com:jackytjh/lg2.git
+
+
+4.只要本地作了提交，就可以通过命令,把本地master分支的最新修改推送至GitHub
+git push origin master
+111
+222
+
+
+
+
+
+echo "# lg3" >> README.md
+git init
+git add lg2.txt
+git commit -m "first commit"
+git remote add origin https://github.com/jackytjh/lg3.git
+git push -u origin master
+
+
+git remote add origin https://github.com/jackytjh/lg3.git
+git push -u origin master
+
+
+
+
+
+
+
